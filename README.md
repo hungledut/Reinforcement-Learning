@@ -19,4 +19,4 @@ An **episode** is a **trajectory** that goes from the initial state of the proce
 The return associated with a moment in time t is the sum (discounted) of rewards that the agent obtains from that moment. We are going to calculate $G_0$, that is, the return to the beginning of the episode: <br>
 $G_0 = R_1 + \gamma R_2 + \gamma^2 R_3 + ... + \gamma^{T-1} R_T$ <br>
 **Policy** is a function that takes a state as input and returns the action to be taken in that state: $\pi : S \mapsto A$ <br>
-The **Policy** has 2 ways to express: (1) Probabilities of taking action $a$ in state $s$: 
+The **Policy** has 2 ways to express: (1) Probabilities of taking action $a$ in state $s$: $\pi(a|s)$ (2) Action $a$ taken in state $s$: $\pi(s)$ <br>
