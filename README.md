@@ -23,3 +23,4 @@ The **Policy** has 2 ways to express: (1) Probabilities of taking action $a$ in 
 There are two types of **policy** : (1) Stochastic Policy (2) Determnistic Policy <br>
 (1) Stochastic Policy $\pi(s) = [p(a_1),p(a_2),...,p(a_n)]$. For example: $\pi(s) = [0.3, 0.2, 0.5]$ <br>
 (2) Deterministic Policy $\pi(s) \mapsto a$. For example: $\pi(s) = a_1$ <br>
+To maximize the sum of *discounted* rewards, we have to find the optimal **policy** $\pi_*$
