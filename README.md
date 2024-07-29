@@ -1,6 +1,6 @@
-# Reinforcement Learning beginner to master - AI in Python (Udemy) 🤖
+## Reinforcement Learning beginner to master - AI in Python (Udemy) 🤖
 
-## Markov decision process 🌑
+### Markov decision process 🌑
 
 The markov decision process is an extension of Markov chain, including 4 key components: $( S,A ,R, P)$ 
 
