@@ -24,5 +24,8 @@ There are two types of **policy** : (1) Stochastic Policy (2) Determnistic Polic
 (1) Stochastic Policy $\pi(s) = [p(a_1),p(a_2),...,p(a_n)]$. For example: $\pi(s) = [0.3, 0.2, 0.5]$ <br>
 (2) Deterministic Policy $\pi(s) \mapsto a$. For example: $\pi(s) = a_1$ <br>
 To maximize the sum of *discounted* rewards, we have to find the optimal **policy** $\pi_*$ <br>
-The **value of a state $v_{\pi}(s)$** is defined as the **return** that we expect to obtain from that state $s$ and interacting with the environment following policy $\pi$ until the end of episode: 
-$v_{\pi}(s) = \mathbb{E}[G_t|S_t=s] = \mathbb{E}[R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + ... + \gamma^{T-t-1} R_T|S_t=s]$
+The value of a state $v_{\pi}(s)$ **(state value)** is defined as the **return** that we expect to obtain from that state $s$ and interacting with the environment following policy $\pi$ until the end of episode: 
+$v_{\pi}(s) = \mathbb{E}[G_t|S_t=s] = \mathbb{E}[R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + ... + \gamma^{T-t-1} R_T|S_t=s]$ <br>
+The q-value of an action in a state **(action value)** is the return that we expect to obtain if we start in state $s$ and we take action $a$ and then we interact with the environment following policy $\pi$ until the end of episode:
+$q_{\pi}(s,a) = \mathbb{E}[G_t|S_t=s, A_t=a] = \mathbb{E}[R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + ... + \gamma^{T-t-1} R_T|S_t=s,A_t=a]$
+
